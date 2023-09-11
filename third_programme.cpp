@@ -3,18 +3,20 @@
 using namespace std;
 class YouTubeChannel
 {
-public:
+private:
     string Name;
     string OwnerName;
     int SubscribersCount;
     list<string>PublishedVideoTitels;
 
+public:
     YouTubeChannel(string name, string ownerName)
     {
         Name = name;
         OwnerName = ownerName;
         SubscribersCount = 0;
     }
+
     void GetInfo()
     {
         cout << "Name: " << Name << endl;
@@ -26,30 +28,36 @@ public:
             cout << videoTitle << endl;
         }
     }
+    void Subscribe()
+    {
+        SubscribersCount++;
+    }
+    void  UnSubscribe()
+    {
+        if(SubscribersCount>0)
+        {
+            SubscribersCount--;
+        }
+    }
+    void PublishedVideo(string title)
+    {
+        PublishedVideoTitels.push_back(title);
+    }
 };
 
 
 int main()
 {
-    YouTubeChannel ytchannel("CodeBeauty","Saldina");
-    ytchannel.PublishedVideoTitels.push_back("C++ for Beginners");
-    ytchannel.PublishedVideoTitels.push_back("HTML & CSS for Beginners");
-    ytchannel.PublishedVideoTitels.push_back("C++ OOP");
+     YouTubeChannel ytchannel("CodeBeauty","Saldina");
+    ytchannel.PublishedVideo("C++ for Beginners");
+    ytchannel.PublishedVideo("HTML & CSS for Beginners");
+    ytchannel.PublishedVideo("C++ OOP");
 
-    YouTubeChannel ytchannel2("AmySings","Amy");
-
+    // ytchannel.Subscribe();
+    // ytchannel.Subscribe();
+    // ytchannel.Subscribe();
+    ytchannel.UnSubscribe();
     ytchannel.GetInfo();
-    ytchannel2.GetInfo();
 
-    /*cout << "Name: " << ytchannel2.Name << endl;
-    cout << "OwnerName: " << ytchannel2.OwnerName << endl;
-    cout << "SubscribersCount: " << ytchannel2.SubscribersCount << endl;
-    cout << "Videos: "<< endl;
-    for(string videoTitle : ytchannel2.PublishedVideoTitels)
-    {
-        cout << videoTitle << endl;
-    }*/
-
-
-    return 0;
+    system("pause>0");
 }
