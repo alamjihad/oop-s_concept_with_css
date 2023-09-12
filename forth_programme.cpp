@@ -44,6 +44,7 @@ public:
     {
         PublishedVideoTitels.push_back(title);
     }
+};
 class CookingYouTubechannel:public YouTubeChannel
 {
     public:
@@ -51,11 +52,10 @@ class CookingYouTubechannel:public YouTubeChannel
     {
 
     }
-}
-void Practice()
-{
-    cout<< OwnerName <<"is practicing cooking,learning new recipes, experienting with spices..."<<endl;
-}
+    void Practice()
+    {
+        cout<< OwnerName <<"is practicing cooking,learning new recipes, experienting with spices..."<<endl;
+    }
 };
 
 
