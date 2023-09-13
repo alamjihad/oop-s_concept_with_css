@@ -97,10 +97,10 @@ int main()
     SingingsYtchannel.Practice();
     SingingsYtchannel.Practice();
 
-    YouTubeChannel * yt1=&CookingYouTubechannel
-    YouTubeChannel * yt2=&singersYouTubechannel
+    YouTubeChannel * yt1 = &CookingYouTubechannel
+    YouTubeChannel * yt2 = &singersYouTubechannel
 
-    yt1.>CheckAnalytics();
-    yt2.>CheckAnalytics();
+    yt1->CheckAnalytics();
+    yt2->CheckAnalytics();
     system("pause>0");
 }

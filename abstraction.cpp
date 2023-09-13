@@ -35,11 +35,13 @@ class IPhone:public SmartPhone
 int main()
 {
 
-    // SmartPhone*s1 = new Android();
-    // s1->TakeASelfie();
-    SmartPhone*s1 = new IPhone();
+    SmartPhone*s1 = new Android();
+    s1->TakeASelfie();
+    SmartPhone*s2 = new IPhone();
     s1->TakeASelfie();
     s1->MakeACall();
+    s2->TakeASelfie();
+    s2->MakeACall();
 
     system("pause>0");
 }

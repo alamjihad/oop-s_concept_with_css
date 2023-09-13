@@ -53,9 +53,9 @@ int main()
     ytchannel.PublishedVideo("HTML & CSS for Beginners");
     ytchannel.PublishedVideo("C++ OOP");
 
-    // ytchannel.Subscribe();
-    // ytchannel.Subscribe();
-    // ytchannel.Subscribe();
+    ytchannel.Subscribe();
+    ytchannel.Subscribe();
+    ytchannel.Subscribe();
     ytchannel.UnSubscribe();
     ytchannel.GetInfo();
 

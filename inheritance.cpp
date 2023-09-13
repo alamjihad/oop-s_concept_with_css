@@ -54,7 +54,7 @@ class CookingYouTubechannel:public YouTubeChannel
     }
     void Practice()
     {
-        cout<< OwnerName <<"is practicing cooking,learning new recipes, experienting with spices..."<<endl;
+        cout<< OwnerName <<" is practicing cooking,learning new recipes, experienting with spices..."<<endl;
     }
 };
 
