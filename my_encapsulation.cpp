@@ -8,19 +8,19 @@ class encapsulation
   public:
     void setvalue (int Earn,int Expense)
     {
-        earn = Earn;
-        expense = Expense;
+      earn = Earn;
+      expense = Expense;
     }
     int getsave()
     {
-        return earn-expense;
+      return earn-expense;
     }
 };
 
 int main()
 {
-    encapsulation save;
-    save.setvalue(10000,5000);
-    cout<< "Monthly saving is : " <<save.getsave();
-    return 0;
+  encapsulation save;
+  save.setvalue(10000,5000);
+  cout<< "Monthly saving : " <<save.getsave();
+  return 0;
 }

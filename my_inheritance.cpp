@@ -8,8 +8,8 @@ class inheritance
 
 class inherit : public inheritance
 {
-    public:
-    double shimul;
+  public:
+  double shimul;
 };
 
 int main()
@@ -19,6 +19,5 @@ int main()
   flower.polash = 9548.08347932480294;
   cout << "Shimul's total point is = " << flower.shimul << endl;
   cout << "Polash's total point is = " << flower.polash << endl;
-
 return 0;
 }
