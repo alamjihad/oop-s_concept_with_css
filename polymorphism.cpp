@@ -5,7 +5,7 @@ class YouTubeChannel
 {
 private:
     string Name;
-    string OwnerName;
+   // string OwnerName;
     int SubscribersCount;
     list<string> PublishedVideoTitels;
 protected:
@@ -50,18 +50,18 @@ public:
     {
         if(ContentQuality<5)
         {
-            cout<<Nme<<"has bad quqlity content."<<endl
+            cout<<Name<<"has bad quality content."<<endl;
         }
         else
         {
-            cout<<Nme<<"has great content."<<endl
+            cout<<Name<<"has great content."<<endl;
         }
     }
 };
 class CookingYouTubechannel:public YouTubeChannel
 {
     public:
-    CookingYouTubechannel(string name,string ownerName):YouTubeChannel(name,ownerName)
+    CookingYouTubechannel(string name,string ownerName):YouTubeChannel(name, ownerName)
     {
 
     }
@@ -91,14 +91,14 @@ int main()
     SingersYouTubechannel singersYtchannel("JohnSings", "John");
 
     cookingYtchannel.Practice();
-    SingingsYtchannel.Practice();
-    SingingsYtchannel.Practice();
-    SingingsYtchannel.Practice();
-    SingingsYtchannel.Practice();
-    SingingsYtchannel.Practice();
+    singersYtchannel.Practice();
+    singersYtchannel.Practice();
+    singersYtchannel.Practice();
+    singersYtchannel.Practice();
+    singersYtchannel.Practice();
 
-    YouTubeChannel * yt1 = &CookingYouTubechannel
-    YouTubeChannel * yt2 = &singersYouTubechannel
+    YouTubeChannel* yt1 = &cookingYtchannel;
+    YouTubeChannel* yt2 = &singersYtchannel;
 
     yt1->CheckAnalytics();
     yt2->CheckAnalytics();

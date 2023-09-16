@@ -5,7 +5,7 @@ class YouTubeChannel
 {
 private:
     string Name;
-    string OwnerName;
+   // string OwnerName;
     int SubscribersCount;
     list<string> PublishedVideoTitels;
 protected:
@@ -68,8 +68,8 @@ int main()
     // cookingYtchannel.Subscribe();
     // cookingYtchannel.Subscribe();
     // cookingYtchannel.GetInfo();
-    cookingYtchannel.Practice();
-    cookingYtchannel2.Practice();
+    CookingYtchannel.Practice();
+    CookingYtchannel2.Practice();
     YouTubeChannel ytChannel("Codebeauty","Saldina")
     system("pause>0");
 }
