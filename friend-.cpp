@@ -11,7 +11,7 @@ private:
         a = lenght;
         circumference = a*3;
         area = (1.73 * a *a) /4;
-    }////
+    }
     //friend void PrintResult(EquilateralTriangle);
     friend class Homework;
 };
