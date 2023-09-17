@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class polymorphism
+class ParentClass
 {
     public:
     virtual void print()
@@ -8,8 +8,7 @@ class polymorphism
         cout << "Hi! I am the first function" << endl;
     }
 };
-
-class poly: public polymorphism
+class ChildClass: public ParentClass
 {
     public:
     void print()
@@ -20,11 +19,11 @@ class poly: public polymorphism
 
 int main()
 {
-    poly morphin;
-    polymorphism* morphingrid = &morphin;
-    morphingrid->print();
+    ChildClass Morphin;
+    ParentClass* MorphinGrid = &Morphin;
+    MorphinGrid->print();
 
-    poly grid;
-    grid.print();
+    ChildClass Grid;
+    Grid.print();
     system("pause>0");
 }

@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class encapsulation
+class ParentClass
 {
   private:
     int earn;
@@ -19,8 +19,8 @@ class encapsulation
 
 int main()
 {
-  encapsulation save;
-  save.setvalue(10000,5000);
-  cout<< "Monthly saving : " <<save.getsave();
+  ParentClass Saving;
+  Saving.setvalue(10000,5000);
+  cout<< "Monthly saving : " <<Saving.getsave();
   return 0;
 }

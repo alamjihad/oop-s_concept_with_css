@@ -1,29 +1,29 @@
 #include<iostream>
 using namespace std;
-class abstraction
+class ParentClass
 {
  private:
-   string ban;
-   string eng;
-   string math;
+  string ban;
+  string eng;
+  string math;
  public:
  void set(string  a,string b,string c)
  {
-   ban=a;
-   eng=b;
-   math=c;
+  ban=a;
+  eng=b;
+  math=c;
  }
  void print()
  {
-   cout << ban << endl;
-   cout << eng << endl;
-   cout << math << endl;
+  cout << ban << endl;
+  cout << eng << endl;
+  cout << math << endl;
  }
 };
 
 int main()
 {
-   abstraction name;
+   ParentClass name;
    name.set("Bangla","English","Mathematics");
    name.print();
    return 0;

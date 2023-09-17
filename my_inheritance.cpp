@@ -1,23 +1,23 @@
 #include<iostream>
 using namespace std;
-class inheritance
+class ParentClass
 {
   public:
-  double polash;
+  float polash;
 };
 
-class inherit : public inheritance
+class ChildClass : public ParentClass
 {
   public:
-  double shimul;
+  float shimul;
 };
 
 int main()
 {
-  inherit flower;
-  flower.shimul = 8438.0382398094598;
-  flower.polash = 9548.08347932480294;
-  cout << "Shimul's total point is = " << flower.shimul << endl;
-  cout << "Polash's total point is = " << flower.polash << endl;
+  ChildClass Flowers;
+  Flowers.shimul = 8438.03;
+  Flowers.polash = 9548.0839;
+  cout << "Shimul's total point is = " << Flowers.shimul << endl;
+  cout << "Polash's total point is = " << Flowers.polash << endl;
 return 0;
 }
