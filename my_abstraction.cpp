@@ -2,7 +2,6 @@
 using namespace std;
 class ParentClass
 {
- private:
   string ban;
   string eng;
   string math;
