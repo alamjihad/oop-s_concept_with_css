@@ -21,6 +21,6 @@ int main()
     One First;
     First.sum(10,15);
     Two Second;
-    Second.sum(9328094.744732,8558945.847584);
+    Second.sum(9328094.744732,8558945.845895);
     return 0;
 }
