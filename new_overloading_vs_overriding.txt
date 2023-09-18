@@ -1,0 +1,7 @@
+Overloading                                                     Overriding
+
+1/parameter must be different                                 1/parameter must be same
+2/can occurs in one class                                     2/has at least one base and one sub class
+3/inheritance not possible                                    3/inheritance must needed
+4/it can't hide the function                                  4/it can hide the function
+5/return type may or may not be same                          5/return type must be same
