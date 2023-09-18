@@ -2,11 +2,11 @@
 using namespace std;
 class EquilateralTriangle {
 private:
-    float a;
-    float circumference;
-    float area;
+    double a;
+    double circumference;
+    double area;
  public:
-    void setA(float lenght)
+    void setA(double lenght)
     {
         a = lenght;
         circumference = a*3;

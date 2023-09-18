@@ -3,13 +3,13 @@ using namespace std;
 class ParentClass
 {
   public:
-  float polash;
+  double polash;
 };
 
 class ChildClass : public ParentClass
 {
   public:
-  float shimul;
+  double shimul;
 };
 
 int main()
